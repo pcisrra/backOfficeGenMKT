@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Cambio de Password";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="~/Content/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="~/Content/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/plugins/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="#"><b>Generador</b>MKT</a>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body" style="height: 300px">
+                <p class="login-box-msg">Para actualizar sus credenciales debe ingresar su password actual, seguido del nuevo.</p>
+
+                <form method="post">
+                    <div class="input-group mb-5">
+                        <input type="password" class="form-control" placeholder="Password Actual">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-5">
+                        <input type="password" class="form-control" placeholder="Password Nuevo">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-block">Modificar</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="mt-5 mb-1">
+                    <a href="@Url.Action("Index", "Login")">Volver a Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/plugins/jquery/jquery.min.js"></script>
+    <script src="~/Scripts/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/dist/js/adminlte.min.js"></script>
+</body>
+</html>
