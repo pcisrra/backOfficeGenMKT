@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Página de Login";
+    ViewBag.Title = "Login";
 }
 
 <html>
@@ -22,14 +22,14 @@
 
                 <form action="" method="post">
                     <div class="input-group mb-5">
-                        <input type="email" class="form-control" placeholder="Usuario">
+                        <input type="text" class="form-control" placeholder="Usuario" id="userLogin">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-5">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" class="form-control" placeholder="Password" id="passwordLogin">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="row">
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                            <button type="submit" id="btnLogin" class="btn btn-primary btn-block" href="@Url.Action("Single", "Generator")">Ingresar</button>
                         </div>
                     </div>
                 </form>

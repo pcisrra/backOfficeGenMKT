@@ -135,6 +135,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\plugins\dist\css\adminlte.min.css" />
     <Content Include="Content\plugins\dist\img\AdminLTELogo.png" />
+    <Content Include="Content\plugins\dist\img\bcp-login-icon.png" />
     <Content Include="Content\plugins\fontawesome-free\css\all.min.css" />
     <Content Include="Content\plugins\icheck-bootstrap\icheck-bootstrap.min.css" />
     <Content Include="Content\plugins\overlayScrollbars\css\OverlayScrollbars.css" />
@@ -218,6 +219,7 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\ChangePass.cshtml" />
     <Content Include="Views\Generator\Index.cshtml" />
+    <Content Include="Views\Generator\Single.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

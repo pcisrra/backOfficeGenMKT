@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="~/Content/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <link rel="stylesheet" href="~/Content/plugins/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__wobble" src="~/Content/plugins/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__wobble" src="~/Content/plugins/dist/img/bcp-login-icon.png" alt="AdminLTELogo" height="60" width="60">
         </div>
         <nav class="main-header navbar navbar-expand navbar-dark">
             <ul class="navbar-nav">
@@ -38,7 +38,7 @@
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <a href="#" class="brand-link">
-                <img src="~/Content/plugins/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="~/Content/plugins/dist/img/bcp-login-icon.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Generador QR</span>
             </a>
             <div class="sidebar">
@@ -54,15 +54,21 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./index.html" class="nav-link">
+                                    <a href="@Url.Action("Single", "Generator")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>QR por Cliente</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./index2.html" class="nav-link">
+                                    <a href="@Url.Action("Batch", "Generator")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>QR por Lote</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="@Url.Action("GetFile", "Generator")" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>DESCARGAR PLANTILLA</p>
                                     </a>
                                 </li>
                             </ul>
@@ -78,13 +84,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/search/simple.html" class="nav-link">
+                                    <a href="@Url.Action("Single", "Report")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Unitarios</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/search/enhanced.html" class="nav-link">
+                                    <a href="@Url.Action("Batch", "Report")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Lotes</p>
                                     </a>
@@ -102,13 +108,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="@Url.Action("Index", "User")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Usuarios</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="@Url.Action("Permission", "User")" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Roles/Permisos</p>
                                     </a>
@@ -119,31 +125,6 @@
                 </nav>
             </div>
         </aside>
-        <div class="content-wrapper">
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0">Principal</h1>
-                        </div>
-                        <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right"></ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                    </div>
-
-                    <div class="row">
-                    </div>
-
-                </div>
-            </section>
-        </div>
 
         <aside class="control-sidebar control-sidebar-dark"></aside>
         <footer class="main-footer">

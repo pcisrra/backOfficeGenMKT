@@ -13,5 +13,15 @@ namespace Generator.MKT.QR.BackOffice.Controllers
         {
             return View();
         }
+
+        public ActionResult Single()
+        {
+            return View();
+        }
+
+        public ActionResult Batch()
+        {
+            return View();
+        }
     }
 }

@@ -17,19 +17,26 @@
             <a href="#"><b>Generador</b>MKT</a>
         </div>
         <div class="card">
-            <div class="card-body login-card-body" style="height: 300px">
+            <div class="card-body login-card-body" style="height: 350px">
                 <p class="login-box-msg">Para actualizar sus credenciales debe ingresar su password actual, seguido del nuevo.</p>
 
                 <form method="post">
                     <div class="input-group mb-5">
-                        <input type="password" class="form-control" placeholder="Password Actual">
+                        <input type="text" class="form-control" placeholder="Usuario (Matrícula)" id="userChangePass">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
                         </div>
                     </div>
                     <div class="input-group mb-5">
-                        <input type="password" class="form-control" placeholder="Password Nuevo">
+                        <input type="password" class="form-control" placeholder="Password Actual" id="oldPassChange">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-5">
+                        <input type="password" class="form-control" placeholder="Password Nuevo" id="newPassChange">
                         <div class="input-group-append">
                             <div class="input-group-text">
                             </div>
@@ -37,7 +44,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary btn-block">Modificar</button>
+                            <button type="submit" id="btnChangePass" class="btn btn-primary btn-block">Modificar</button>
                         </div>
                     </div>
                 </form>
